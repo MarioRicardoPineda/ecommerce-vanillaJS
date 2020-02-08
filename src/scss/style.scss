@@ -1,0 +1,12 @@
+// SCSS PRINCIPAL, DONDE TODOS LOS MODULOS SERAN IMPORTADOS
+
+@import './config/variables.scss';
+@import './config/mixins.scss';
+
+@import './resets/resets.scss';
+
+@import './layout/layout.scss';
+
+@import './components/cards.scss';
+
+@import './helpers/help.scss';
