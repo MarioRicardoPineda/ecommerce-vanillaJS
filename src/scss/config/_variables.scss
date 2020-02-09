@@ -1,0 +1,37 @@
+:root{
+    --first-color: #e84118;
+    --dark-color: #34495e;
+    --light-color: #ffffff;
+    --shadow-color: 0 0 10px rgba(#2c3e50, .5);
+    --shadow-light-color: 0 0 10px rgba(#ffffff, .5);
+    --mx-width: 75rem; 
+}
+
+:root{
+    --z-back: -10;
+    --z-normal: 1;
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+}
+
+$breakpoint : (
+    sm : 365px,
+    md : 768px,
+    l : 1024px,
+    xl : 1200px
+);
+
+:root{
+    --h1-size: 2.4em;
+    --h2-size: 1.6em;
+    --text-size: 1em;
+    --sm-text: .8em; 
+    
+    @include from(l){
+        --h1-size: 3em;
+        --h2-size: 2.2em;
+        --text-size: 1.2em;
+        --sm-text: .9em;
+    }
+}
