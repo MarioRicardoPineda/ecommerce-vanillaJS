@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,9 +14,84 @@
     <link rel="stylesheet" href="src/css/style.css">
 
 </head>
+
 <body>
-    
+
+    <!-- HEADER WEBSITE -->
+    <header class="l-header">
+
+        <div class="menu__sidebar">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <div class="logo">
+            <img src="src/img/shop-logo.png" alt="Logo">
+        </div>
+
+        <div class="search" id="search">
+            <input type="text" name="" id="search__input">
+            <buton class="search__btn">
+                <i class="fas fa-search"></i>
+            </buton>
+        </div>
+
+        <a href="#" class="cart">
+            <span class="number">1</span>
+            <i class="fas fa-shopping-cart"></i>
+        </a>
+
+        <div class="profile">
+            <div class="photo">
+                <img src="src/img/face.jpg" alt="user-name">
+            </div>
+            <i class="fa fa-caret-down"></i>
+        </div>
+
+    </header>
+
+    <!-- MAIN CONTENT  -->
+    <main class="l-container">
+        <div class="card">
+
+            <div class="card__image">
+                <img src="src/img/nike-shoes.jpg" alt="product-name">
+            </div>
+
+            <div class="card__content">
+                <h2 class="card__title">Nike Shoes</h2>
+
+                <span class="separate"></span>
+
+                <div class="card__footer">
+                    <span class="stock">
+                        <p>En Existencias</p>
+                        <span class="stock__number">5</span>
+                    </span>
+                    <button class="card__btn">
+                        <i class="fas fa-shoping-cart"></i>
+                        <span class="price">$45.99</span>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- LEFT PANEL -->
+    <aside class="l-sidebar"></aside>
+
+    <!-- MAIN FOOTER -->
+    <footer class="l-footer">
+        <div class="footer__icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+        </div>
+        <div class="footer__txt"></div>
+    </footer>
+
 
     <script src="src/js/main.js" type="module"></script>
 </body>
+
 </html>
