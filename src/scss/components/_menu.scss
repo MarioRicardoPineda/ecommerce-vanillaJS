@@ -1,0 +1,97 @@
+.menu__sidebar{
+    font-size: 2em;
+    color: var(--border-color);
+    cursor: pointer;
+}
+
+.l-header .logo{
+    width: 7rem;
+}
+
+.search{
+    display: flex;
+    width: 25rem;
+
+
+    input[type=text]{
+        width: 90%;
+        padding: .7rem .5rem;
+        border: 1px solid var(--border-color);
+        outline: none;
+        border-radius: 10px 0 0 10px;
+        font-size: 16px;
+        &:focus{
+            border: 1px solid var(--first-color);
+        }
+    }
+
+    &__btn{
+        width: 12%;
+        display: inline-block;
+        text-align: center;
+        line-height: 40px;
+        border: 1px solid var(--first-color);
+        border-left: none;
+        background-color: var(--first-color);
+        color: var(--light-color);
+        font-size: 1.3em;
+        border-radius: 0 10px 10px 0;
+    }
+}
+
+.cart{
+    position: relative;
+    color: var(--border-color);
+    border: 1px solid var(--border-color);
+    width: 4.5rem;
+    height: 3.5rem;
+    text-align: center;
+    border-radius: 5px;
+
+    .number{
+        position: absolute;
+        top: 5%;
+        left: 35%;
+        display: inline-block;
+        width: 1.4rem;
+        height: 1.4rem;
+        border-radius: 50%;
+        border: 1px solid var(--border-color);
+        padding: .5em;
+        line-height: .4rem;
+        font-size: 15px;
+        text-align: center;
+        color: var(--first-color);
+    }
+
+    .fas{
+        position: absolute;
+        bottom: 5%;
+        left: 25%;
+        font-size: 1.7rem;
+    }
+}
+
+.profile{
+
+    width: 6rem;
+    height: 3.5rem;
+    display: flex;
+    cursor: pointer;
+
+    .photo{
+        img{
+            width: 3.6rem;
+            height: 3.6rem;
+            border: 1px solid var(--border-color);
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+
+    .fa{
+        font-size: 2rem;
+        align-self: center;
+        margin-left: 10px;
+    }
+}
