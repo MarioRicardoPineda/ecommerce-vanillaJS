@@ -3,6 +3,7 @@
     display: grid;
     grid-template-columns: 4rem repeat(3, 1fr);
     grid-template-rows: 4rem 1fr 4rem;
+    grid-gap: .5rem;
     grid-template-areas: 
         "header     header  header  header"
         "sidebar    main    main    main"
@@ -18,7 +19,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow:  var(--shadow-color);
+    box-shadow: 0 4px 10px -4px rgba(#2c3e50, .5);
     padding-left: 1em;
     padding-right: 1em;
 }
@@ -34,6 +35,5 @@
 }
 
 .l-footer{
-    background-color: steelblue;
     grid-area: footer;
 }

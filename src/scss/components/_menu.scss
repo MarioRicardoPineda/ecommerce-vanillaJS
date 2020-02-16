@@ -12,7 +12,6 @@
     display: flex;
     width: 25rem;
 
-
     input[type=text]{
         width: 90%;
         padding: .7rem .5rem;
@@ -93,5 +92,6 @@
         font-size: 2rem;
         align-self: center;
         margin-left: 10px;
+        color: var(--border-color)
     }
 }
