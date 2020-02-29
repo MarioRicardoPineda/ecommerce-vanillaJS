@@ -1,12 +1,12 @@
 
 .grid-container{
     display: grid;
-    grid-template-columns: 4rem repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 4rem 1fr 4rem;
-    grid-gap: .5rem;
+    grid-gap: 1rem;
     grid-template-areas: 
         "header     header  header  header"
-        "sidebar    main    main    main"
+        "main       main    main    main"
         "footer     footer  footer  footer"
     ;
     min-height: 100vh;
@@ -14,8 +14,8 @@
 
 
 .l-header{
-    background-color: var(--light-color);
     grid-area: header;
+    background-color: var(--light-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,13 +25,7 @@
 }
 
 .l-container{
-    background-color: tomato;
     grid-area: main;
-}
-
-.l-sidebar{
-    background-color: skyblue;
-    grid-area: sidebar;
 }
 
 .l-footer{

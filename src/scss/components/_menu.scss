@@ -96,23 +96,28 @@
         color: var(--border-color)
     }
 
+
     &__info{
         position: absolute;
         top: 4em;
         left: 100%;
-        transform: translateX(-100%);
-        min-width: 15rem;
+        transition: transform .3s ease, opacity .5s ease ;
+        transform-origin: top;
+        transform: translateX(-100%) scaleY(0);
+        min-width: 17rem;
         padding: .8em;
         border-radius: 1em;
         background-color: var(--light-color);
+        border: 1px solid var(--border-color);
+        opacity: 0;
+
         
         hr{
             display: inline-block;
             width: 100%;
             height: 1px;
             border:none;
-            margin-bottom: 1em;
-            margin-top: 1em;
+            margin: .8em 0;
             color: var(--border-color);
             background-color: var(--border-color);
         }
@@ -142,8 +147,44 @@
             list-style: none;
 
             li{
-                margin-bottom: 0.6em;
+                margin-bottom: .8em;
+                font-weight: bold;
+
+                a {
+                    width: 100%;
+                    padding: 0.5em;
+                    transition: color .2s;
+                    color: var(--border-color);
+                }
+
+                a .fa{
+                    font-size: 1.5em;
+                    margin-right: .4em;
+                    width: 2rem;
+                }
+               
+                &:hover > a{
+                    color: var(--dark-color);
+                }
+
+                
+            }
+
+        }
+
+        .session-close{
+            color: var(--first-color);
+            font-weight: bold;
+            
+            & > i{
+                font-size: 1.5em;
+                margin-right: 0.4em;
             }
         }
+    }
+
+    .active{
+        transform: translateX(-100%) scaleY(1);
+        opacity: 1;
     }
 }
